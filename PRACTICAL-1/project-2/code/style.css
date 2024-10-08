@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #070707;
+    line-height: 1.4;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    padding: 15px;
+    height: 100vh;
+    background: url("./assets/logo.jpg");
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+header {
+    height: 30px;
+    padding: 0px 20px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+table {
+    width: 100%;
+    height: 80%;
+    border-spacing: 15px;
+}
+
+th,
+td {
+    padding: 10px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 15px;
+    border: 1px solid rgba(175, 175, 175, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.13);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.14);
+    text-align: center;
+}
+
+th {
+    height: 50px;
+    font-size: 14px;
+}
+
+td,
+span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+div span {
+    width: 33%;
+
+    padding: 10px;
+    background: rgba(131, 131, 131, 0.4);
+    border-radius: 9px;
+    margin: 5px;
+}
+div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+table tr th#period {
+    width: 7%;
+}
+
+table tr th#time {
+    width: 13%;
+}
+
+table tr th.days {
+    width: 16%;
+}
+
+td.empty {
+    display: none;
+}
+
+#list-container {
+    padding: 10px 15px 0 15px;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#list-container div {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    margin: 0 2px 0 2px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+div#list-container div h3 {
+    font-size: 11px;
+    margin-bottom: -10px;
+}
+
+div#list-container div ul li {
+    font-size: 10px;
+}
+
+div#list-container div ul {
+    list-style-type: disc;
+    margin-left: -20px;
+}

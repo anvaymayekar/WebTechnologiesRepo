@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+body {
+    background: url("./assets/bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    height: 910px;
+    width: 725px;
+    border-radius: 40px;
+    padding: 30px 40px;
+}
+.glass {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(175, 175, 175, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.13);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+input,
+textarea {
+    height: 48px;
+    width: 260px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.18),
+        rgba(255, 255, 255, 0.07)
+    );
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.13);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+    margin: 10px 10px;
+}
+input[type="button"] {
+    height: 45px;
+    width: 120px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: 700;
+    background: #ffffff;
+    color: #333333;
+}
+
+input[type="button"]:enabled:active,
+input[type="button"]:enabled:hover {
+    opacity: 0.8;
+}
+
+textarea:hover,
+textarea:active,
+textarea:focus,
+input:active,
+input:focus,
+input:hover {
+    padding: 8px 18px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-right: 3px solid rgba(255, 255, 255, 0.13);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.25),
+        rgba(255, 255, 255, 0.1)
+    );
+}
+
+input[type="number"] {
+    width: 320px;
+}
+input[type="email"] {
+    width: 400px;
+}
+
+input[type="datetime-local"] {
+    cursor: pointer;
+    width: 500px;
+}
+::placeholder,
+input[type="datetime-local"] {
+    color: #ffffff;
+    font-weight: 400;
+    opacity: 0.88;
+}
+:hover::placeholder {
+    opacity: 0.6;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+h1,
+h2 {
+    font-size: 20px;
+    margin-bottom: 7px;
+    margin-left: 13px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.divider {
+    width: 280px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.18),
+        rgba(255, 255, 255, 0.07)
+    );
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.13);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.sect {
+    margin-top: 50px;
+    width: 125px;
+    height: 220px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.cavity {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 660px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    margin-bottom: 20px;
+}
+h3 {
+    position: absolute;
+    margin-top: -210px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+label {
+    font-weight: 400;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 25px;
+}
