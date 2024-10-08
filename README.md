@@ -1,2 +1,2 @@
-# WebTechnologiesRepo
-Subject - Web Technologies
+# WebTechnologyRepo
+Subject - Web Technology
